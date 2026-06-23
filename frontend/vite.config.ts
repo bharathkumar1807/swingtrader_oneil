@@ -9,12 +9,12 @@ export default defineConfig({
     proxy: {
       // Proxy all /api calls to ASP.NET Core backend
       '/api': {
-        target: 'http://localhost:5000',
+        target: 'http://localhost:5176',
         changeOrigin: true,
       },
       // Proxy SignalR hub
       '/hubs': {
-        target: 'http://localhost:5000',
+        target: 'http://localhost:5176',
         changeOrigin: true,
         ws: true, // WebSocket support
       }
