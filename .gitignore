@@ -1,0 +1,25 @@
+# ── .NET Backend ──────────────────────────────────────────────
+bin/
+obj/
+*.user
+*.suo
+.vs/
+*.log
+
+# Secrets — never commit real keys
+backend/SwingTrader.API/appsettings.json
+backend/SwingTrader.API/appsettings.*.json
+!backend/SwingTrader.API/appsettings.example.json
+
+# ── Node / React Frontend ──────────────────────────────────────
+frontend/node_modules/
+frontend/dist/
+frontend/.env
+frontend/.env.local
+frontend/.env.*.local
+
+# ── OS / Editor ───────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
